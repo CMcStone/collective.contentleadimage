@@ -55,8 +55,8 @@
     <class class="Products.Archetypes.BaseObject.BaseObject">
           <implements interface=".interfaces.ILeadImageable" />
     </class>
-
-    <subscriber zcml:condition="installed Products.CacheSetup"
+   
+      <subscriber zcml:condition="installed Products.CacheSetup"
        provides="Products.CacheSetup.interfaces.IPurgeUrls"
        factory=".purgeurls.LeadImagePurge"
        for=".interfaces.ILeadImageable"
